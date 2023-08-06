@@ -7,6 +7,9 @@ import { Button, ButtonGroup, Typography } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faChevronLeft,faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const data = [
     {
@@ -42,10 +45,14 @@ const data = [
 ]
 
 const Header = () => {
+    React. useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
 
     let content = (
         <Box sx={{ flexGrow: 1 ,marginTop:'35px'}}>
-            <Grid container spacing={2}>
+            <Grid container spacing={0}>
 
                 <Grid item xs={12} md={4} sm={12}>
                     <Box>
@@ -59,7 +66,9 @@ const Header = () => {
                         <Typography variant='h6' className='para-header'>
                             Simple and sleek design with users in mind.
                         </Typography>
-                        <Box sx={{
+                        <Box
+                        data-aos="fade-right"
+                        sx={{
                             display:'flex',
                             flexDirection:'row',
                             alignItems:'center',
@@ -108,8 +117,14 @@ const Header = () => {
 
                 <Grid item xs={12} md={8} sm={12}>
                     <Box className='header-left'>
-                        <Box className='img-header'>
-                            <img className='img-scooter' src='scooter1.png' alt='.' />
+                        <Box  className='img-header' >
+                            <img
+                            data-aos="fade-left"
+                            data-aos-anchor="#example-anchor"
+                            data-aos-offset="500"
+                            data-aos-duration="500"
+                            
+                            className='img-scooter' src='scooter1.png' alt='.' />
                         </Box>
                         <Box>
 

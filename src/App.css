@@ -46,6 +46,7 @@ margin-left: 30%;
     
   font-weight: 100 !important;
   color: var(--baseColor);
+  margin-left: 10px !important;
 }
 .header-title span{
   font-weight: bolder !important;
@@ -224,6 +225,9 @@ margin-left: 30%;
   }
   .input-mobile{
     width:200px !important;
+  }
+  .header-title{
+    margin-left: 0 !important;
   }
 }
 

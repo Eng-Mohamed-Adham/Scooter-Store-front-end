@@ -44,6 +44,7 @@ export default function Tap() {
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
 
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -51,6 +52,8 @@ export default function Tap() {
   const handleChangeIndex = (index) => {
     setValue(index);
   };
+
+
 
   return (
     <Box sx={{ bgcolor: 'background.paper',  }}>
@@ -126,7 +129,7 @@ export default function Tap() {
         <Tab
             
           label={<img className='img-tap ' src='color1.webp' alt='.'  />}
-           {...a11yProps(0)} 
+            {...a11yProps(0)} 
           />
          
           <Tab

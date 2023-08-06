@@ -2,6 +2,10 @@ import { Box, Typography } from "@mui/material";
 import Title from "../hooks/title";
 import Note from "../hooks/Note";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
     const data = [
         {
             
@@ -32,8 +36,15 @@ const ProductInfo = () => {
         let title = 'Product Information'
         let text = 'Our Scooter has following unique design and technology features.'
         
+        useEffect(() => {
+            AOS.init();
+            AOS.refresh();
+        }, []);
+
     let content = (
-        <Box sx={{
+        <Box
+        data-aos="fade-right"
+        sx={{
             display:'flex',
             flexDirection:'row',
             flexWrap:'wrap',
@@ -42,7 +53,11 @@ const ProductInfo = () => {
             
         }}>
             <img src='product-img.png' alt='.' className="img-mobile" />
-            <Box>
+            <Box
+            sx={{
+                marginLeft:'20px'
+            }}
+            >
                 {
                     data.map(item => (
                         <Typography

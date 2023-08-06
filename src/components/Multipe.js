@@ -2,6 +2,7 @@ import { Box, Button, Typography } from "@mui/material";
 import Title from "../hooks/title";
 import Note from "../hooks/Note";
 
+
 const data = [
     {
         text:'Material : Aluminium alloy',
@@ -63,8 +64,12 @@ const Multiple = () => {
                             alignItems:'center'
 
                         }}
+                       
                         >
-                    <img className="img-mobile" src="multiple1.png" alt="." />
+                    <img
+                
+
+                    className="img-mobile" src="multiple1.png" alt="." />
                     <img src="multiple2.png" alt="." className="img-mobile" />
 
                 </Box>
