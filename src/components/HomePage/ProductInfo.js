@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
-import Title from "../hooks/title";
-import Note from "../hooks/Note";
+import Title from "../../hooks/title";
+import Note from "../../hooks/Note";
 
 import AOS from "aos";
 import "aos/dist/aos.css";

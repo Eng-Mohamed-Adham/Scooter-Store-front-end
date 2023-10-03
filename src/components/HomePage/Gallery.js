@@ -1,6 +1,6 @@
 
 import { Box, Button } from '@mui/material';
-import Title from '../hooks/title';
+import Title from '../../hooks/title';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem'
 

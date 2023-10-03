@@ -1,6 +1,6 @@
 
 import { Box, Button, TextField, Typography } from '@mui/material';
-import Title from '../hooks/title';
+import Title from '../../hooks/title';
 
 
 

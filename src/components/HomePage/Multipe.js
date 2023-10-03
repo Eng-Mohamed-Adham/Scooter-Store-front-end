@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
-import Title from "../hooks/title";
-import Note from "../hooks/Note";
+import Title from "../../hooks/title";
+import Note from "../../hooks/Note";
 
 
 const data = [

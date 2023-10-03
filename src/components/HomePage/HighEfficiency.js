@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import Title from "../hooks/title";
+import Title from "../../hooks/title";
 
 
 

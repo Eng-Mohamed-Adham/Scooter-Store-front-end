@@ -15,7 +15,7 @@ import MenuItem from '@mui/material/MenuItem';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBars} from '@fortawesome/free-solid-svg-icons'
-import { ButtonGroup } from '@mui/material';
+import { ButtonGroup, Link } from '@mui/material';
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -180,12 +180,14 @@ function NavBar() {
                 {
                     (!login) && (
                         <ButtonGroup>
+                          <Link href='/auth'>
                         <Button variant="text"
                         sx={{
                             marginRight:'10px',
                             color:'#42454A'
                         }}
                         >LOG IN</Button>
+                        </Link>
                         <Button variant="contained"
                         sx={{
                             background:'#42454A',
